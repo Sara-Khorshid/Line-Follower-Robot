@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"line-robot\startup_stm32f103xb.o"
+"line-robot\main.o"
+"line-robot\stm32f1xx_it.o"
+"line-robot\stm32f1xx_hal_msp.o"
+"line-robot\stm32f1xx_hal_gpio_ex.o"
+"line-robot\stm32f1xx_hal_adc.o"
+"line-robot\stm32f1xx_hal_adc_ex.o"
+"line-robot\stm32f1xx_hal.o"
+"line-robot\stm32f1xx_hal_rcc.o"
+"line-robot\stm32f1xx_hal_rcc_ex.o"
+"line-robot\stm32f1xx_hal_gpio.o"
+"line-robot\stm32f1xx_hal_dma.o"
+"line-robot\stm32f1xx_hal_cortex.o"
+"line-robot\stm32f1xx_hal_pwr.o"
+"line-robot\stm32f1xx_hal_flash.o"
+"line-robot\stm32f1xx_hal_flash_ex.o"
+"line-robot\stm32f1xx_hal_exti.o"
+"line-robot\stm32f1xx_hal_tim.o"
+"line-robot\stm32f1xx_hal_tim_ex.o"
+"line-robot\stm32f1xx_hal_uart.o"
+"line-robot\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "line-robot\line-robot.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "line-robot.map" -o line-robot\line-robot.axf
