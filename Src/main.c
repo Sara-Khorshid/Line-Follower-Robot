@@ -338,8 +338,8 @@ int main(void)
 			if(adcValues[2] >= 1000){digout[2] = 0;} //represent black in mid right
 			else if(adcValues[2] < 1000){digout[2] = 1;} //represent white in mid right
 			
-			if(adcValues[3] >= 2500){digout[3] = 0;} //represent black in right
-			else if(adcValues[3] < 2500){digout[3] = 1;} //represent white in right
+			if(adcValues[3] >= 1000){digout[3] = 0;} //represent black in right
+			else if(adcValues[3] < 1000){digout[3] = 1;} //represent white in right
 			
 			
 			//command according to line colors
